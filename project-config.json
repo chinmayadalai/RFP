@@ -1,0 +1,32 @@
+{
+    "IMAGE_TAG":"1.4.0",
+    "FAB_NET_NM":"rfpnet",
+    "CHANNEL":"rfpchannel",
+    "CHAINCODE":"rfpcc",
+    "CHAINCODE_V":"v0",
+    "CC_SRC_PATH":"../rfpnet",
+
+    "INIT_FUNCTION":"Init",
+    "INVOKE_FUNCTION":"getAllRFx",
+    "QUERY_FUNCTION":"getRFxAssetByStatus",
+    "TRANSIENT_FUNCTION":"addPrintOrderPrivateDetails",
+    "INIT_ARGS":"",
+    "INVOKE_ARGS":"[\"RFP_0000\"]",
+    "QUERY_ARGS":"Assigned",
+    "TRANSIENT_ARGS":"{\"printOrderID\":\"Print_20190321125621\",\"assignedPrinterID\":\"printer_110\"}",
+    
+    "CONSENSUS_TYPE": "solo",
+    "DOMAIN":"bc.example.com",
+    "ORDERER_D":"rfporderer1.bc.example.com",
+    "ORDERER_NAME":"rfporderer1",
+    "ORG1":"rfpprovider1.bc.example.com",
+    "PEER0_ORG1":"peer0.rfpprovider1.bc.example.com",
+    "CA1_D":"ca.rfpprovider1.bc.example.com",
+    "KAFKA_D":"kafka.bc.example.com",
+
+    "ORG1_NAME": "RFPProvider1",
+    "ORDERER_ORG_NAME":"RFPOrderer1Org",
+    "CA1_NAME": "CA-RFPProvider1",
+    "ORG1_MSP":"RFPProvider1MSP",
+    "ORDERER_MSP":"RFPOrderer1MSP"
+}
